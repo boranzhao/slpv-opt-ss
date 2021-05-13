@@ -1,3 +1,14 @@
 
 Use plot_time_simulation.m file to load the data and generate the plots
 
+Meaning of some expressions in naming the data:
+-	XY3: both the X and Y matrices (related to the Lyapunov function) are parameter-dependent. I believe I discussed this in the paper
+-	heuSS: heuristically selected (i.e. not optimized) switching surfaces
+-	optSS: optimized switching surfaces
+-	3subs: dividing the range of theta_1 into three subsets
+-	Proj: using the projected LMI conditions (which have less decision variables)
+-	Max: minimizing the worst-case performance across all the subsets, (instead of a weighted 
+-	jnl: for journal submission; this is for distinguishing the data used for this journal submission and (an earlier) conference submission
+-	nojump: cannot remember its exact meaning now 
+
+
