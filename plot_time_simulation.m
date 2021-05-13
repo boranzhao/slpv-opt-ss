@@ -243,9 +243,9 @@ plot([theta_info_heuSS.Theta1(2,1) theta_info_heuSS.Theta1(2,1)] ,[OptSLPV_heuSS
 plot([theta_info_heuSS.Theta1(2,2) theta_info_heuSS.Theta1(2,2)],[OptSLPV_heuSS_max.gam(2)-height OptSLPV_heuSS_max.gam(2)+height],'m-.','Linewidth',linewd)
 plot([theta_info_heuSS.Theta1(3,1) theta_info_heuSS.Theta1(3,1)] ,[OptSLPV_heuSS_max.gam(3)-height OptSLPV_heuSS_max.gam(3)+height],'m-.','Linewidth',linewd), 
 
-% SLPV with ALLC
+% SLPV with improved local perforemance
 id=id+1;
-legend_str{id} = 'SLPV 1'; %'SLPV with ALLC' ;
+legend_str{id} = 'SLPV 1'; 
 for i=1:regnum
     h(id) = plot([theta_info_heuSS.Theta1(i,1) theta_info_heuSS.Theta1(i,2)],[OptSLPV_heuSS.gam(i) OptSLPV_heuSS.gam(i)],'b--','Linewidth',linewd*1.5);
 end
@@ -254,7 +254,7 @@ plot([theta_info_heuSS.Theta1(2,1) theta_info_heuSS.Theta1(2,1)] ,[OptSLPV_heuSS
 plot([theta_info_heuSS.Theta1(2,2) theta_info_heuSS.Theta1(2,2)],[OptSLPV_heuSS.gam(2)-height OptSLPV_heuSS.gam(2)+height],'b-.','Linewidth',linewd)
 plot([theta_info_heuSS.Theta1(3,1) theta_info_heuSS.Theta1(3,1)] ,[OptSLPV_heuSS.gam(3)-height OptSLPV_heuSS.gam(3)+height],'b-.','Linewidth',linewd), 
 
-% SLPV with ALLC and Optimized SSs
+% SLPV with improved local performance and optimized SSs
 id=id+1;
 legend_str{id} =  'SLPV 2'; %'SLPV with ALLC and optimized SSs' ;
 for i=1:regnum
